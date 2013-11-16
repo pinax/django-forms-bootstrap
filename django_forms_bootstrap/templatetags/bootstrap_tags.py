@@ -30,6 +30,11 @@ def as_bootstrap_inline(form):
     template = get_template("bootstrap/form.html")
     form = _preprocess_fields(form)
 
+    for field in form.fields:
+        name = form.fields[field].widget.__class__.__name__.lower()
+        if not name.startswith("radio") and not name.startswith("checkbox"):
+            form.fields[field].widget.attrs["placeholder"] = form.fields[field].label
+
     css_classes = {
         "label": "sr-only",
         "single_container": "",
