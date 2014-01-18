@@ -17,7 +17,7 @@
                 {% for choice in field.field.choices %}
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" {% if choice.0 in field.value or choice.0 == field.value %}checked="checked"{% endif %} name="{{ field.html_name }}" id="id_{{ field.html_name }}_{{ forloop.counter }}" value="{{ choice.0 }}"> {{ choice.1 }}
+                            <input type="checkbox" {% if choice.0|stringformat:"s" in field.value or choice.0|stringformat:"s" == field.value|stringformat:"s" %}checked="checked"{% endif %} name="{{ field.html_name }}" id="id_{{ field.html_name }}_{{ forloop.counter }}" value="{{ choice.0 }}"> {{ choice.1 }}
                         </label>
                     </div>
                 {% endfor %}
@@ -30,7 +30,7 @@
                 {% for choice in field.field.choices %}
                     <div class="radio">
                         <label>
-                            <input type="radio" {% if choice.0 == field.value %}checked="checked" {% endif %} name="{{ field.html_name }}" id="id_{{ field.html_name }}_{{ forloop.counter }}" value="{{ choice.0 }}"> {{ choice.1 }}
+                            <input type="radio" {% if choice.0|stringformat:"s" == field.value|stringformat:"s" %}checked="checked" {% endif %} name="{{ field.html_name }}" id="id_{{ field.html_name }}_{{ forloop.counter }}" value="{{ choice.0 }}"> {{ choice.1 }}
                         </label>
                     </div>
                 {% endfor %}
