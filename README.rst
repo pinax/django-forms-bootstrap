@@ -1,7 +1,7 @@
 Django Forms Bootstrap
 ======================
 
-Simple Twitter Bootstrap filter for Django forms. Extracted from the
+Simple Bootstrap filter for Django forms. Extracted from the
 bootstrap theme for Pinax.
 
 
@@ -50,4 +50,4 @@ License & Attribution
 ---------------------
 
 Django Forms Bootstrap is released under the MIT license. It does not include
-any styles or scripts from the Twitter Bootstrap project.
+any styles or scripts from the Bootstrap project.
