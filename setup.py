@@ -106,7 +106,7 @@ def find_package_data(
 
 PACKAGE = "django_forms_bootstrap"
 NAME = "django-forms-bootstrap"
-DESCRIPTION = "a simple form filter for using Django forms with Twitter Bootstrap"
+DESCRIPTION = "a simple form filter for using Django forms with Bootstrap"
 AUTHOR = "Luke Hatcher"
 AUTHOR_EMAIL = "luke@lukehatcher.com"
 URL = "http://github.com/pinax/django-forms-bootstrap"
