@@ -1,6 +1,22 @@
 Django Forms Bootstrap
 ======================
 
+.. image:: https://img.shields.io/travis/pinax/django-forms-bootstrap.svg
+    :target: https://travis-ci.org/pinax/django-forms-bootstrap
+
+.. image:: https://img.shields.io/coveralls/pinax/django-forms-bootstrap.svg
+    :target: https://coveralls.io/r/pinax/django-forms-bootstrap
+
+.. image:: https://img.shields.io/pypi/dm/django-forms-bootstrap.svg
+    :target:  https://pypi.python.org/pypi/django-forms-bootstrap/
+
+.. image:: https://img.shields.io/pypi/v/django-forms-bootstrap.svg
+    :target:  https://pypi.python.org/pypi/django-forms-bootstrap/
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target:  https://pypi.python.org/pypi/django-forms-bootstrap/
+
+
 Simple Bootstrap filter for Django forms. Extracted from the
 bootstrap theme for Pinax.
 
