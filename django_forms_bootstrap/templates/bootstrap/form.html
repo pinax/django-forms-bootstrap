@@ -1,9 +1,9 @@
 {% load bootstrap_tags %}
 
 {% if form.non_field_errors %}
-    <div class="bs-callout bs-callout-danger">
+    <div class="alert alert-danger">
         {% if form_error_title %}
-            <h4>{{ form_error_title }}</h4>
+        <strong>{{ form_error_title }}</strong><br />
         {% endif %}
         {% for error in form.non_field_errors %}
             {{ error }}<br />
