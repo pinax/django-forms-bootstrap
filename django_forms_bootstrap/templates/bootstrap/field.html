@@ -58,7 +58,7 @@
                 </div>
             {% else %}
                 <div class="{{ css_classes.wrap }}">
-                    {{ field }}
+                    {{ field|safe }}
                     {% include "bootstrap/_field_errors.html" %}
                     {% include "bootstrap/_field_help_text.html" %}
                 </div>
