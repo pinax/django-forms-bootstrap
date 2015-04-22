@@ -21,6 +21,7 @@
                                    {% if choice.0 in field.value or choice.0|stringformat:"s" in field.value or choice.0|stringformat:"s" == field.value|stringformat:"s" %}
                                        checked="checked"
                                    {% endif %}>
+                                   {{ choice.1 }}
                         </label>
                     </div>
                 {% endfor %}
