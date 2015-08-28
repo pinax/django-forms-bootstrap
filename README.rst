@@ -20,23 +20,24 @@ Django Forms Bootstrap
     :target:  https://pypi.python.org/pypi/django-forms-bootstrap/
 
 
-django-forms-bootstrap is a simple bootstrap filter for Django forms. Extracted from the
-bootstrap theme for Pinax.
-
+Pinax
+------
 Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. 
 This collection can be found at http://pinaxproject.com.
 
-In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here  http://pinaxproject.com/pinax/code_of_conduct/.
 
-The Pinax documentation is available at http://pinaxproject.com/pinax/.
+django-forms-bootstrap
+-----------------------
 
-For updates and news regarding the Pinax Project, please follow us on Twitter at @pinaxproject and check out our blog http://blog.pinaxproject.com.
+``django-forms-bootstrap`` is a simple bootstrap filter for Django forms. Extracted from the
+bootstrap theme for Pinax.
 
-Quick Start
+
+Getting Started
 -----------
 
-Include "django-forms-bootstrap" in your requirements file and
-"django_forms_bootstrap" in your INSTALLED APPS.
+Include ``django-forms-bootstrap`` in your requirements file and
+``django_forms_bootstrap`` in your ``INSTALLED APPS``.
 
 Make sure your template loader finders includes app directories.
 
@@ -57,7 +58,7 @@ and include your form using something like the following markup: ::
     </form>
 
 
-Specifying form layouts
+Specifying Form Layouts
 -----------------------
 
 Bootstrap includes styles for four types of forms. To change the display of
@@ -73,8 +74,28 @@ Search              .form-search       Extra-rounded text input for a typical se
 ==================  ================   ==============================================================
 
 
+Documentation
+--------------
+
+The Pinax documentation is available at http://pinaxproject.com/pinax/.
+
+
 License & Attribution
 ---------------------
 
 Django Forms Bootstrap is released under the MIT license. It does not include
 any styles or scripts from the Bootstrap project.
+
+
+Code of Conduct
+----------------
+
+In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here  http://pinaxproject.com/pinax/code_of_conduct/.
+
+
+Pinax Project Blog and Twitter
+-------------------------------
+
+For updates and news regarding the Pinax Project, please follow us on Twitter at @pinaxproject and check out our blog http://blog.pinaxproject.com.
+
+
