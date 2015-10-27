@@ -77,7 +77,7 @@ Search              .form-search       Extra-rounded text input for a typical se
 Documentation
 --------------
 
-The Pinax documentation is available at http://pinaxproject.com/pinax/.
+The django-forms-bootstrap documentation is currently under construction. If you would like to help us write documentation, please join our Pinax Project Slack channel and let us know! The Pinax documentation is available at http://pinaxproject.com/pinax/.
 
 
 License & Attribution
