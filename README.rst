@@ -61,17 +61,17 @@ and include your form using something like the following markup: ::
 Specifying Form Layouts
 -----------------------
 
-Bootstrap includes styles for four types of forms. To change the display of
-your form, add one of the following class attributes to your form tag:
+Bootstrap includes styles for three types of forms. To change the display of
+your form, add one of the following class attributes to your form tag and
+use the appropriate template filter:
 
-==================  ================   ==============================================================
-        Name             Class                        Description
-==================  ================   ==============================================================
-Vertical (default)  .form-vertical     Stacked, left-aligned labels over controls
-Horizontal          .form-horizontal   Float left, right-aligned labels on same line as controls
-Inline              .form-inline       Left-aligned label and inline-block controls for compact style
-Search              .form-search       Extra-rounded text input for a typical search aesthetic
-==================  ================   ==============================================================
+================   ======================================   ========================================
+    Class          Template filter                                Description
+================   ======================================   ========================================
+.form-vertical     ``{{ form|as_bootstrap }}``              Labels over controls (default)
+.form-horizontal   ``{{ form|as_bootstrap_horizontal }}``   Labels on same line as controls
+.form-inline       ``{{ form|as_bootstrap_inline }}``       Compact style with inline-block controls
+================   ======================================   ========================================
 
 
 Documentation
