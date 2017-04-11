@@ -1,7 +1,14 @@
 from django import template
-from django.template import Context
 from django.template.loader import get_template
+from django import VERSION as DJANGO_VERSION
 
+
+if DJANGO_VERSION >= (1, 10, 0):
+    context_class = dict
+else:
+    # Django<1.10 compatibility
+    from django.template import Context
+    context_class = Context
 
 register = template.Library()
 
@@ -22,7 +29,7 @@ def as_bootstrap(form):
     template = get_template("bootstrap/form.html")
     form = _preprocess_fields(form)
 
-    c = Context({
+    c = context_class({
         "form": form,
     })
     return template.render(c)
@@ -44,7 +51,7 @@ def as_bootstrap_inline(form):
         "wrap": "",
     }
 
-    c = Context({
+    c = context_class({
         "form": form,
         "css_classes": css_classes,
     })
@@ -81,7 +88,7 @@ def as_bootstrap_horizontal(form, label_classes=""):
             css_classes["single_container"] += offset_class + " " + wrap_class + " "
             css_classes["wrap"] += wrap_class + " "
 
-    c = Context({
+    c = context_class({
         "form": form,
         "css_classes": css_classes,
     })
